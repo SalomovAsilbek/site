@@ -74,11 +74,12 @@
 
 
 .navigate {
-    background: #0f0f0f;
+    background-color: #0f0f0f;
     padding: 25px 0;
+    margin-top: 15px;
+    
 
-
-    &-wrapper {
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -94,10 +95,13 @@
         font-weight: 400;
         font-size: 14px;
         text-transform: uppercase;
-        color: grey;
+        color: gray;
         padding: 30px 20px;
         cursor: pointer;
     }
 
-
+    & .active {
+        background-color: #1f1f1f;
+        color: white;
+    }
 }
