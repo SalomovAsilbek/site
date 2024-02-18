@@ -110,22 +110,21 @@
     background-image: url(./images/Rectangle.png);
     height: 810px;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 70px;
+    
     
 
-    &__porten {
-        border: 4px solid white;
-        width: 320px;
-        height: 320px;
+    &__square {
+        border: 4px solid #fff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 93px 67px;
     }
 
     &__PORTEN {
@@ -139,7 +138,7 @@
         margin-bottom: 15px;
     }
 
-    &__title {
+    &__desc {
         font-weight: 400;
         font-size: 22px;
         text-transform: uppercase;
@@ -148,7 +147,7 @@
     }
 
 
-    &__desc {
+    &__description {
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
@@ -158,4 +157,111 @@
         width: 100%;
         max-width: 850px;
     }
+}
+
+
+.collections {
+    background-color: #000;
+
+    &__img {
+        background-image: url(images/collection.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 895px;
+        height: 730px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 93px 80px;
+    }
+
+    &__h3 {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        // background-color:  #191b1c;
+        background: linear-gradient(to bottom, #191b1c 80%, #000 20%);
+
+        & p {
+
+            font-weight: 400;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        & img {
+            margin: 55px 20px 80px;
+        }
+
+        & span {
+            font-weight: 700;
+            font-size: 16px;
+            color: gray;
+        }
+    }
+
+    &__line {
+        width: 120px;
+        height: 1px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        }
+
+    &__img-h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        background: none;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        padding: 12px 28px;
+        border: 1px solid white;
+        margin-bottom: 100px;
+    }
+}
+
+.container-wrapper {
+max-width: 1920px;
+margin: 0 auto;
+display: flex;
+}
+
+.wrapper {
+    display: flex;
 }
