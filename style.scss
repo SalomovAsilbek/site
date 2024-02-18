@@ -105,3 +105,57 @@
         color: white;
     }
 }
+
+.banner {
+    background-image: url(images/Rectangle.png);
+    height: 810px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+
+    &__porten {
+        border: 4px solid white;
+        width: 320px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__PORTEN {
+        font-weight: 700;
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        border-bottom: 2px solid white;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+    }
+
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        width: 100%;
+        max-width: 850px;
+    }
+}

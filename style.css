@@ -85,4 +85,52 @@
 .navigate .active {
   background-color: #1f1f1f;
   color: white;
+}
+
+.banner {
+  background-image: url(images/Rectangle.png);
+  height: 810px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner__porten {
+  border: 4px solid white;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner__PORTEN {
+  font-weight: 700;
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.banner__title {
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.banner__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 850px;
 }/*# sourceMappingURL=style.css.map */
