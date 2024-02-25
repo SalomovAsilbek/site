@@ -10,6 +10,44 @@
   padding: 0 405px;
   margin: 0 auto;
 }
+@media (max-width: 1650px) {
+  .container {
+    padding: 0 105px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 45px;
+  }
+}
+
+body {
+  background-color: #000;
+}
+@font-face {
+  font-family: "PayfairDisplay";
+  src: local("PayfairDisplay"), url("./fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PayfairDisplay";
+  src: local("PayfairDisplay"), url("./fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans"), url("./fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PostNoBillsJaffna";
+  src: local("Archangelsk"), url("./fonts/PostNoBillsJaffna-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
 
 .header {
   background-color: #000;
@@ -64,6 +102,11 @@
   padding: 25px 0;
   margin-top: 15px;
 }
+@media (max-width: 1000px) {
+  .navigate {
+    padding: 7px 0;
+  }
+}
 .navigate__wrapper {
   display: flex;
   align-items: center;
@@ -81,6 +124,12 @@
   color: gray;
   padding: 30px 20px;
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .navigate__link {
+    font-size: 10px;
+    padding: 15px 10px;
+  }
 }
 .navigate .active {
   background-color: #1f1f1f;
@@ -161,11 +210,26 @@
   display: flex;
   gap: 50px;
 }
+@media (max-width: 1300px) {
+  .collections__cards {
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .collections__cards {
+    flex-direction: column;
+  }
+}
 .collections__card {
   display: flex;
   flex-direction: column;
   align-items: start;
   background: linear-gradient(to bottom, #191b1c 80%, #000 20%);
+}
+@media (max-width: 1000px) {
+  .collections__card {
+    width: 170px;
+  }
 }
 .collections__card p {
   font-weight: 400;
@@ -176,6 +240,13 @@
 .collections__card img {
   margin: 55px 20px 80px;
 }
+@media (max-width: 1000px) {
+  .collections__card img {
+    width: 65px;
+    height: 65px;
+    margin: 5px 5px 5px;
+  }
+}
 .collections__card span {
   font-weight: 700;
   font-size: 16px;
@@ -184,6 +255,7 @@
 .collections__line {
   width: 120px;
   height: 1px;
+  display: block;
   background-color: white;
   margin-bottom: 50px;
 }
@@ -200,7 +272,6 @@
   text-transform: uppercase;
   text-align: center;
   color: white;
-  margin-bottom: 30px;
 }
 .collections__btn {
   background: none;
@@ -223,4 +294,213 @@
 
 .wrapper {
   display: flex;
+}
+
+.old {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.old__tittles {
+  width: 1040px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.old__title {
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.old__line {
+  border: 1px solid white;
+  width: 120px;
+  height: 0px;
+  margin-bottom: 50px;
+}
+.old__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: white;
+  width: 471px;
+  margin-bottom: 50px;
+}
+.old__btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  width: 331px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.new__title {
+  font-family: PayfairDisplay;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+.new__cards {
+  padding: 0 72px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 35px;
+  margin-bottom: 30px;
+}
+.new__line {
+  width: 120px;
+  height: 1px;
+  display: block;
+  background-color: white;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.brand {
+  background-color: #0f0f0f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.brand__tittles {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.brand__cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.about {
+  background-image: url(images/lastback.png);
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+.about__title {
+  font-family: "PayfairDisplay";
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.about__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+  margin-bottom: 35px;
+}
+.about__shop {
+  max-width: 350px;
+  width: 100%;
+}
+.about__item {
+  padding: 10px 20px;
+  background-color: #0f0f0f;
+  cursor: pointer;
+}
+.about__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+}
+.about__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+.about__sends {
+  max-width: 350px;
+  width: 100%;
+}
+.about__btn {
+  height: 100%;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 15px 20px;
+  background-color: #0f0f0f;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 15px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(236, 227, 227);
+  border-color: gray;
+  border: none;
+}
+
+input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(236, 227, 227);
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(236, 227, 227);
+}
+
+.footer__wrapper {
+  justify-content: space-between;
+  display: flex;
+  padding: 15px 0;
+}
+.footer__desc {
+  font-weight: 700;
+  font-size: 12px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-align: right;
+  color: lightgray;
 }/*# sourceMappingURL=style.css.map */
